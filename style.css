@@ -52,7 +52,7 @@ body{
   background-color: white;
   border-radius: 7px;
   cursor: pointer;
-  transition: all 1s ease-in-out;
+  transition: all 1s ease;
 
 
   
@@ -63,19 +63,18 @@ body{
   color: white;
   border-radius: 7px;
   cursor: pointer;
-  transition: all 1s ease-in-out;
+  transition: all 1s ease;
 
  
 }
 .signup:hover{
- /* border: 1px solid black; */
- padding: 7px 29px;
+transform: scale(0.9);
  
 }
 
 .login:hover{
-  /* border: 1px solid black; */
-padding: 7px 29px;
+  transform: scale(0.9);
+
  
  }
 
@@ -149,6 +148,7 @@ padding: 7px 29px;
     height: 47px;
     border-radius: 9px;
   border: none;
+  outline: none;
 
 }
 .inputetc span{
@@ -159,11 +159,15 @@ padding: 7px 29px;
 
 }
 .inputetc svg{
-    margin: -8px 5px;
+   position: relative;
+   top: -28px;
     color: #C21760;
 }
 
 .inputetc a{
+  position: relative;
+  top: -35px;
+  left: 5px;
     text-decoration:none;
     color: black;
 }
@@ -306,7 +310,7 @@ padding: 7px 29px;
       margin: 18px 25px;
 
     }
-    .box span{
+    .box button{
       border: 1px solid black;
       position: relative;
       /* top: 255px; */
@@ -317,6 +321,9 @@ padding: 7px 29px;
       border-radius: 7px;
       font-family: sans-serif;
       transition: all 1s ease;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 600;
+      font-size: 14px;
     }
     .box img{
       height: 293px;
@@ -327,18 +334,17 @@ padding: 7px 29px;
      
 
     }
-    .box span:hover{
-      box-shadow: 0px 0px 12px brown;
-      padding: 13px 26px;
+    .box button:hover{
+      box-shadow: 0px 0px 12px rgb(14, 9, 9);
+     transform: scale(0.9);
     }
 
 
    
     .box img:hover{
       /* border: 1px solid rgb(0, 0, 0); */
-     box-shadow: 0px 0px 12px brown;
-     height: 300px;
-      width: 310px;
+     box-shadow: 0px 0px 12px rgb(57, 53, 53);
+   transform: scale(1.1);
     
     }
   
@@ -596,7 +602,8 @@ opacity: 0.4;
 }
 .box2 a:hover{
 text-decoration:double;
- padding: 12px 5px;
+ padding: 0px 5px;
+
  
 }
 
